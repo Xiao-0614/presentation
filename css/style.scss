@@ -1,0 +1,69 @@
+$mygreen: rgb(74, 110, 19);
+$mywhite: rgb(224, 207, 175);
+$mygray: rgb(97, 96, 96);
+$mypink: rgb(189, 109, 149);
+$myfontsize: 2px;
+$myred: rgb(221, 121, 114);
+$myblue: rgb(92, 118, 206);
+$mybordersize: 10px;
+$mywidth: 600ps;
+$myheight: 200px;
+$puppywidth: 50px;
+
+a{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: $mygreen;
+  text-decoration: $mywhite;
+  text-shadow: $mygray;
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover {
+    color: $mypink;
+}
+
+.active {
+    font-size: larger;
+    font-family: fantasy;
+    border: $myfontsize solid $myred;
+}
+
+img {
+    width: 200px;
+    border: $mybordersize solid $myblue;
+    padding: $mybordersize;
+    margin: $mybordersize;
+}
+
+.game {
+  width: $mywidth;
+  height: $myheight;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#puppy {
+  width: $puppywidth;
+  height: $puppywidth;
+  background-image: url(images/puppy.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
